@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeCLaim
+meatadata:
+    name: database-persistent-volume-PersistentVolumeCLaim
+spec:
+    accessModes:
+        - ReadWriteOnce
+    resources:
+        request:
+            storage: 2Gi
+        
