@@ -1,6 +1,6 @@
-docker build -t andyylsong/multi-client:lastest -t andyylsong/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
-docker build -t andyylsong/multi-server:lastest -t andyylsong/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
-docker build -t andyylsong/multi-worker:lastest -t andyylsong/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
+docker build -t andyylsong/multi-client:latest -t andyylsong/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
+docker build -t andyylsong/multi-server:latest -t andyylsong/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
+docker build -t andyylsong/multi-worker:latest -t andyylsong/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
 docker push andyylsong/multi-client:latest
 docker push andyylsong/multi-client:$GIT_SHA
 docker push andyylsong/multi-server:latest
