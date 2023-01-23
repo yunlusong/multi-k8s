@@ -18,7 +18,7 @@ before_install:
   - docker build -t yunlusong/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run yunlusong/react-test npm test -- --coverage
+  - docker run -e CI=true yunlusong/react-test npm test -- --coverage
 
 deploy:
   provider: script
