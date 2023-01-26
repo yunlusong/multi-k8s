@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: andysong-shop-tls
+spec:
+  secretName: andysong-shop
+  issuerRef:
+    name: lesencrypt-prod
+    kind: ClusterIssuer
+  commonName: andysong.shop
+  dnsNames:
+    - andysong.shop
+    - www.andysong.shop
