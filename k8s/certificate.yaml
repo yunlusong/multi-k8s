@@ -5,7 +5,7 @@ metadata:
 spec:
   secretName: andysong-shop
   issuerRef:
-    name: lesencrypt-prod
+    name: letsencrypt-prod
     kind: ClusterIssuer
   commonName: andysong.shop
   dnsNames:
